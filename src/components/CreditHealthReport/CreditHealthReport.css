@@ -1,0 +1,90 @@
+.credit-health-report {
+  background-color: #ecebf3;
+  padding: 20px;
+  text-align: center;
+  max-width: 960px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.credit-health-report h2 {
+  color: #004d40;
+  margin-bottom: 20px;
+}
+
+.bullet-points-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  
+}
+
+.column {
+  width: 48%; /* Each column takes up less than half the container width */
+}
+
+.bullet-point {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.icon {
+  width: 20px; /* Small icon size */
+  height: 20px;
+  margin-right: 10px;
+}
+
+.bullet-point p {
+  margin: 0;
+  text-align: left;
+  color: #333;
+  font-size: 14px;
+}
+
+.cta-line {
+  color: #004d40;
+  margin-bottom: 10px;
+}
+
+.cta-button {
+  background-color: #00897b;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #00695c;
+}
+
+@media (max-width: 768px) {
+  .bullet-points-container {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .cta-button {
+    width: 100%;
+    padding: 15px 0; /* Larger tap area for mobile devices */
+  }
+  .icon {
+    width: 16px; /* Adjust the size of the icon as needed */
+    height: 16px;
+    margin-right: 10px; /* Add some space between the icon and the text */
+    fill: #28a745; /* Color of the checkmark, you can change it as needed */
+  }
+  
+}

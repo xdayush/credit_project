@@ -1,0 +1,82 @@
+.credit-flex-container {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: aliceblue;
+}
+  
+.credit-flex-container h2 {
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.credit-flex-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.credit-flex-left, .credit-flex-right {
+  width: 50%;
+}
+
+.credit-flex-left h3, .credit-flex-right h3 {
+  color: #003366;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.credit-flex-left ul, .credit-flex-right ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.credit-flex-left ul li, .credit-flex-right ul li {
+  padding-left: 30px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+/* Adding custom bullet points */
+.credit-flex-left ul li::before, .credit-flex-right ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: #003366;
+  border-radius: 50%;
+}
+
+.credit-flex-left img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Fixes alignment issues and removes extra space below images */
+  margin-bottom: 20px;
+}
+.credit-flex-right img{
+  max-width: 100%;
+  height: auto;
+  display: block; /* Fixes alignment issues and removes extra space below images */
+  margin-top: 50px;
+  margin-left:150px;
+}
+
+@media (max-width: 768px) {
+  .credit-flex-content {
+    flex-direction: column;
+  }
+
+  .credit-flex-left, .credit-flex-right {
+    width: 100%;
+  }
+  
+  .credit-flex-right {
+    order: -1; /* Brings the right content above the left content */
+  }
+}

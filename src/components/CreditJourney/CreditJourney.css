@@ -1,0 +1,184 @@
+.credit-journey-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f7fa;
+  margin: 4%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  padding: 4%;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /*Addssubtleshadowfordepth*/height: fit-content;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 8px;
+  overflow: hidden; 
+}
+
+.header {
+  /* background: linear-gradient(135deg, rgb(154, 160, 180) 0%, #00c6ff 100%); */
+  background: linear-gradient(135deg, #0408f5, #4a90e2);
+  color: white;
+  padding: 20px 0;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.header:before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: rotate(45deg);
+  pointer-events: none;
+  animation: shimmer 8s infinite linear;
+}
+
+@keyframes shimmer {
+  0% {
+    top: -50%;
+    left: -50%;
+  }
+  100% {
+    top: 50%;
+    left: 50%;
+  }
+}
+
+.title {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+}
+
+/* ... rest of your styles */
+
+/* For responsive design */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 0;
+  }
+
+  .header .title {
+    font-size: 20px;
+  }
+}
+
+
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  background: linear-gradient(to bottom right, #ffffff, #f6f7f9); 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: relative;
+  margin-bottom: 20px; /* Space between cards */
+  width:auto; /* Example width - adjust as needed */
+  height: 30%;
+  margin-left: 60px;
+  margin-right: 60px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slightly raise the card on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+}
+
+
+
+.card h3{
+  color: #050505;
+  margin-bottom: 30px; /* Adjust based on actual size of icon */
+}
+
+/* .card p ,.card1{
+  color: #666;
+  font-size: 14px;
+} */
+
+.card p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6; 
+  text-align: center;/* Adjust line height for better readability */
+  margin-bottom: 10px; /* Add space between paragraphs */
+}
+
+.card {
+  font-weight: bold; /* Example: make text in .card1 bold */
+  color: #4CAF50; /* Example: change text color for .card1 */
+  /* Add any other styles you want for .card1 */
+}
+
+.icon-bg {
+  background-color: #003366;
+  color: white;
+  border-radius: 50%;
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+  display: flex;
+  background-color: #21214b;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -20px; /* Adjust position as needed */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.join-cta button {
+  background-color: #22b573;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.cardcontainer {
+  margin-left: 20px; /* Adjust as needed */
+}
+.join-cta button:hover {
+  background-color: #1d9a5f;
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+  }
+}

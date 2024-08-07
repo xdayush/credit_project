@@ -25,7 +25,7 @@ const JoinCredit = () => {
               <li>See if your loans are at the best interest rate in the market.</li>
               <li>Find out how you can manage your EMIs better.</li>
             </ul>
-            <img src={pic2} alt="Reduce EMI Costs" />
+            <img className='pic2-join' src={pic2} alt="Reduce EMI Costs" />
           </div>
         </div>
       </div>

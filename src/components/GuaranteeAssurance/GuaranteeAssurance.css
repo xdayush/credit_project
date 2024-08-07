@@ -1,0 +1,105 @@
+.credit-flex-container-a {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: aliceblue;
+}
+  
+.credit-flex-container-a h2 {
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.credit-flex-content-a {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.credit-flex-left-a, .credit-flex-right-a {
+  width: 50%;
+}
+
+.credit-flex-left-a h3, .credit-flex-right-a h3 {
+  color: #003366;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.credit-flex-right-a h3{
+  margin-top: 50px;
+}
+
+.credit-flex-left-a ul, .credit-flex-right-a ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.credit-flex-left-a ul li, .credit-flex-right-a ul li {
+  padding-left: 30px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.credit-flex-left-a li{
+  padding-left: 20px;
+}
+.credit-flex-right-a{
+  margin-top: 90px;
+}
+.credit-flex-left-a h3{
+  margin-top: 100px;
+  padding-left: 20px;
+}
+
+/* Adding custom bullet points */
+.credit-flex-left-a ul li::before, .credit-flex-right-a ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: #003366;
+  border-radius: 50%;
+}
+
+.credit-flex-left-a img {
+  max-width: 90%;
+  height: 120%;
+  display: block; /* Fixes alignment issues and removes extra space below images */
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+.credit-flex-right-a img{
+  max-width: 100%;
+  height: auto;
+  display: block; /* Fixes alignment issues and removes extra space below images */
+  margin-top: -50px;
+  margin-left:40px;
+}
+
+@media (max-width: 768px) {
+  .credit-flex-content-a {
+    flex-direction: column;
+  }
+
+  .credit-flex-left-a, .credit-flex-right-a {
+    width: 100%;
+  }
+  
+  .credit-flex-right-a {
+    order: -1; /* Brings the right content above the left content */
+  }
+}
+@media only screen and (max-width: 768px)  {
+.credit-flex-right-a img{
+  margin: 0px;
+}}
+
+@media only screen and (max-width: 768px)  {
+  .credit-flex-right-a img, .credit-flex-left-a img{
+    display: none;
+  }}

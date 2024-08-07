@@ -14,11 +14,11 @@
 .plans {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: -100px;
 }
 
 .plan-card {
-  background: linear-gradient(135deg, #5f7db4, #cfdef3);
+  background: linear-gradient(135deg, #0a0b61,#4a90e2);
   border-radius: 10px;
   padding: 20px;
   width: 300px;
@@ -74,3 +74,14 @@
   background: #000dff;
   color: #fff;
 }
+@media only screen and (max-width: 768px)  {.plans-container{
+  width: 61vh;
+  height: fit-content;
+  margin-left: -6vh;
+  overflow:visible ;
+
+}
+} 
+@media only screen and (max-width: 768px)  {.plan-price {
+ text-align: center;
+}} 

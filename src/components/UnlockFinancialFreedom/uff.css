@@ -1,0 +1,124 @@
+
+  .uff-main{
+    width: 100%;
+    /* height: 100vh; */
+    max-width: 1200px;
+    margin: 0 auto;
+    /* border-radius: 10px 10px 0 0; */
+    font-family: Roboto, sans-serif;
+    margin-bottom: -40px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  }
+
+  @media only screen and (max-width: 768px)  {.uff-main{
+    margin-bottom: -500px;
+    padding-bottom: -500px;
+  }}
+  
+  .top-uff {
+    background-color: #001f4d;
+    color: white;
+    text-align :center;
+    justify-content: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    
+  }
+  @media only screen and (max-width: 768px)  {.top-uff{
+    height: 5000vh;
+  } 
+  }  
+  
+  .highlight {
+    color: #7640ff;
+    display: inline;
+  }
+  
+  .body-uff {
+    background-color: white;
+    padding: 40px 20px;
+  }
+  .body-uff h1 {
+    font-size: 34px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  @media only screen and (max-width: 768px)  {.body-uff h1 {
+   font-size: 28px;
+   margin-bottom: 40px;
+  }} 
+  
+  .body-uff .blue {
+    color: #5865f2;
+    font-weight: bold;
+  }
+  
+  .body-uff p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: black;
+    padding-bottom: 20px;
+  }
+  
+  .body-uff h6 {
+    /* font-size: 18px; */
+    margin-bottom: 20px;
+    color: #333;
+    margin-left: 20px ;
+  }
+  .uff-text-center{
+    margin-left: 10px;
+  }
+  
+  .body-uff .btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color:#001f4d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    align-content: s;
+    margin-left: 60px;
+  
+  }
+  @media only screen and (max-width: 768px)  {.body-uff .btn {
+    
+    margin-left: 80px;
+  }} 
+  
+  .image-section-f {
+    margin-left: 120vh;
+    margin-top: -55vh;
+    box-shadow: none;
+  
+  }
+  .img-f {
+    margin-left: -200px;
+
+  }
+  
+  @media only screen and (max-width: 768px)  {.image-section-f .img-f {
+    display: none;
+  }} 
+
+  @media only screen and (max-width: 768px)  {.top-uff {
+    height: 10vh;
+  }} 
+
+  .roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: black;
+  }
+
+  
+  .uff-text{
+    font-size: 25px;
+  }
+  @media only screen and (max-width: 768px)  {.uff-text {
+    font-size: 18px;
+    text-align: center;
+  }} 
+  

@@ -1,0 +1,116 @@
+.credit-flex-container-p {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: aliceblue;
+}
+  
+.credit-flex-container-p h2 {
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.credit-flex-content-p {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.credit-flex-left-p, .credit-flex-right-p {
+  width: 50%;
+}
+
+.credit-flex-left-p h3, .credit-flex-right-p h3 {
+  color: #003366;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.credit-flex-left-p ul, .credit-flex-right-p ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.credit-flex-left-p ul li, .credit-flex-right-p ul li {
+  padding-left: 30px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.credit-flex-left-p li{
+  padding-left: 20px;
+}
+.credit-flex-right-p{
+  margin-top: 90px;
+}
+.credit-flex-right-p li{
+  margin-bottom: 50px;
+}
+.credit-flex-left-p h3{
+  margin-top: 100px;
+  padding-left: 20px;
+}
+
+/* Adding custom bullet points */
+.credit-flex-left-p ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 20%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: #003366;
+  border-radius: 50%;
+}
+.credit-flex-right-p ul li::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: #003366;
+  border-radius: 50%;
+}
+
+.credit-flex-left-p img {
+  max-width: 100%;
+  height: 120%;
+  display: block; /* Fixes alignment issues and removes extra space below images */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.credit-flex-right-p img{
+  max-width: 100%;
+  height: auto;
+  display: block; /* Fixes alignment issues and removes extra space below images */
+  margin-top: 50px;
+  margin-left:80px;
+}
+
+@media (max-width: 768px) {
+  .credit-flex-content-p {
+    flex-direction: column;
+  }
+
+  .credit-flex-left-p, .credit-flex-right-p {
+    width: 100%;
+  }
+  
+  .credit-flex-right-p {
+    order: -1; /* Brings the right content above the left content */
+  }
+}
+@media only screen and (max-width: 768px)  {
+.credit-flex-right-p img{
+  margin: 0px;
+}}
+
+@media only screen and (max-width: 768px)  {
+  .credit-flex-right-p img ,.credit-flex-left-p img{
+    display: none;
+  }}

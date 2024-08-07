@@ -20,7 +20,7 @@
 
 .header {
   /* background: linear-gradient(135deg, rgb(154, 160, 180) 0%, #00c6ff 100%); */
-  background: linear-gradient(135deg, #0408f5, #4a90e2);
+  background: linear-gradient(135deg, #0a0b61, #4a90e2);
   color: white;
   padding: 20px 0;
   margin-bottom: 40px;
@@ -100,12 +100,17 @@
   position: relative;
   margin-bottom: 20px; /* Space between cards */
   width:auto; /* Example width - adjust as needed */
-  height: 30%;
+  height: 50%;
   margin-left: 60px;
   margin-right: 60px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+.card h3{
+  text-align: center;
+  padding-right: 30px;
 }
 
 .card:hover {
@@ -118,6 +123,7 @@
 .card h3{
   color: #050505;
   margin-bottom: 30px; /* Adjust based on actual size of icon */
+  margin-left: 30px;
 }
 
 /* .card p ,.card1{
@@ -155,16 +161,21 @@
   transform: translateX(-50%);
 }
 
-.join-cta button {
+.join-cta a {
   background-color: #22b573;
   color: white;
   border: none;
-  padding: 10px 25px;
+  padding: 15px 25px;
   border-radius: 20px;
   cursor: pointer;
-  margin-top: 30px;
+  margin-top: 60px;
   font-size: 16px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  
+}
+.join-cta{
+  margin-top: 40px;
 }
 .cardcontainer {
   margin-left: 20px; /* Adjust as needed */
@@ -182,3 +193,7 @@
     width: 100%;
   }
 }
+@media only screen and (max-width: 768px)  {.card {
+ width: 80%;
+ margin-left: 30px;
+}} 

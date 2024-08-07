@@ -11,6 +11,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
+  
 }
 
 .column {
@@ -37,7 +38,7 @@
 .card h3 {
   margin-top: 0;
   color: #333;
-  font-size: 1.5em; /* Larger font size */
+  font-size: 20px; /* Larger font size */
   position: relative;
   padding-bottom: 10px;
 }
@@ -45,14 +46,17 @@
 .card h3:after {
   content: '';
   display: block;
-  width: 60px;
+  width: 80px;
   height: 3px;
   background-color: #007bff;
   position: absolute;
   bottom: 0;
-  left: 50%;
+  left: 46%;
   transform: translateX(-50%);
 }
+@media only screen and (max-width: 768px)  {.card h3:after {
+ left: 43%;
+}} 
 
 .card p {
   color: #666;
@@ -73,4 +77,8 @@
   .column {
     margin: 0 0 20px 0;
   }
+}
+
+.card :nth-child(2) p{
+margin-top: 20px;
 }

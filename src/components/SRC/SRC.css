@@ -1,0 +1,97 @@
+.credit-flex-container-g {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  height: 110vh;
+  margin-top: 10vh;
+  overflow: hidden;
+}
+  
+.credit-flex-container-g h2 {
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.credit-flex-content-g {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.credit-flex-left-g, .credit-flex-right-g {
+  width: 50%;
+}
+
+.credit-flex-left-g h3, .credit-flex-right-g h3 {
+  color: #003366;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: left;
+  margin-top: 10vh;
+}
+
+.credit-flex-left-g ul, .credit-flex-right-g ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.credit-flex-left-g ul li, .credit-flex-right-g ul li {
+  padding-left: 30px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+/* Adding custom bullet points */
+.credit-flex-left-g ul li::before, .credit-flex-right-g ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: #003366;
+  border-radius: 50%;
+}
+
+.credit-flex-left-g img {
+  height: 80vh;
+  width: 120vh;
+  display: block; /* Fixes alignment issues and removes extra space below images */
+  /* margin-bottom: 20px; */
+  margin-left: -20vh;
+  margin-top: -20vh;
+}
+.credit-flex-right-g img{
+  height: 90vh;
+  width: 110vh;
+  display: block; /* Fixes alignment issues and removes extra space below images */
+  margin-top: 50px;
+  margin-left:0px;
+}
+
+@media (max-width: 768px) {
+  .credit-flex-content-g {
+    flex-direction: column;
+  }
+
+  .credit-flex-left-g, .credit-flex-right-g {
+    width: 100%;
+  }
+  
+  .credit-flex-right-g {
+    order: -1; /* Brings the right content above the left content */
+  }
+}
+.credit-flex-left-g h3{
+  margin-top: 3 0vh;
+}
+.credit-flex-left-g ul,h3{
+  margin-left: 7vh ;
+}
+.credit-flex-right-g h3{
+  margin-left:-0vh;
+}

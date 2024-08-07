@@ -1,5 +1,6 @@
 import React from "react";
 import "./card.css";
+import Popup from "./Popup/popup";
 
 // const CheckmarkIcon = () => (
 //   <svg
@@ -14,15 +15,28 @@ import "./card.css";
 //     />
 //   </svg>
 // );
+import  { useState } from "react";
 
 const Card = () => {
+  const [isPopupVisible, setPopupVisible] = useState(false);
+  const [popupImageUrl, setPopupImageUrl] = useState("");
+
+  const handleGetStartedClick = (imageUrl) => {
+    console.log("Button clicked, imageUrl:", imageUrl); // Debugging line
+    setPopupImageUrl(imageUrl);
+    setPopupVisible(true);
+  };
+
+  const handleClosePopup = () => {
+    setPopupVisible(false);
+  };
   return (
-    <div className="plans-container">
+    <div className="plans-container" id="card1">
       <h2 className="plans-title">Plans & Pricing</h2>
       <div className="plans">
         <div className="plan-card">
           <h3 className="plan-type">Basic</h3>
-          <p className="plan-price">₹99</p>
+          <p className="plan-price">₹100</p>
           <hr className="divider" />
           <ul className="plan-features">
             <li>Everything in Basic Plus</li>
@@ -30,7 +44,9 @@ const Card = () => {
             <li>Understanding your credit score and factors affecting it.</li>
             <li>6 Month RM support.</li>
           </ul>
-          <button className="plan-button">Get Started</button>
+          <button className="plan-button" onClick={() => handleGetStartedClick("./img/qr-100.jfif")}>
+            
+            Get Started</button>
         </div>
         <div className="plan-card">
           <h3 className="plan-type">Premium</h3>
@@ -45,9 +61,10 @@ const Card = () => {
             <li>Personalized action plan to improve your credit score.</li>
             <li>6 Month RM support.</li>
           </ul>
-          <button className="plan-button">Get Started</button>
+          <button className="plan-button" onClick={() => handleGetStartedClick("./img/qr-1369.jfif")}>Get Started</button>
         </div>
       </div>
+      {isPopupVisible && <Popup imageUrl={popupImageUrl} onClose={handleClosePopup} />}
     </div>
   );
 };

@@ -26,6 +26,7 @@
   font-size: 18px;
   margin-bottom: 10px;
   text-align: left;
+  font-weight: bold;
 }
 
 .credit-flex-left ul, .credit-flex-right ul {
@@ -79,4 +80,24 @@
   .credit-flex-right {
     order: -1; /* Brings the right content above the left content */
   }
+}
+@media only screen and (max-width: 768px)  {
+.credit-flex-right img{
+  margin: 0px;
+}}
+.credit-flex-right h3{
+  margin-top: 80px;
+  margin-left: 90px;
+}
+.credit-flex-right ul{
+  margin-left: 90px;
+}
+.credit-flex-left h3{
+  margin-top: 50px;
+}
+.pic2-join{
+  padding-top: 50px;
+}
+.credit-flex-right img{
+  padding-left: 25px;
 }

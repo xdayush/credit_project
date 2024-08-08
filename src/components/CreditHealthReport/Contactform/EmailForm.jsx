@@ -11,9 +11,9 @@ const EmailForm = ({ isOpen, onClose }) => {
     e.preventDefault();
 
     // Your EmailJS service ID, template ID, and Public Key
-    const serviceId = '';
-    const templateId = '';
-    const publicKey = '';
+    const serviceId = 'service_kvx7fmd';
+    const templateId = 'template_01bprse';
+    const publicKey = '-YJQUGxEVBpxavsfY';
 
     // Create a new object that contains dynamic template params
     const templateParams = {
